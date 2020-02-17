@@ -1263,6 +1263,9 @@ header a {
   .thirdSection__title > div {
     width: 80%;
   }
+  .thirdSection__title img {
+    display: none;
+  }
   .fourthSection__title div {
     width: 70%;
     padding: 20px;
