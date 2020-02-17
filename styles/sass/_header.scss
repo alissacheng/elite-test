@@ -257,7 +257,7 @@ header a{
 
     h1{
         margin-top: 0;
-        font-size: 2.5rem;
+        font-size: 2.75rem;
     }
 }
 
@@ -329,8 +329,8 @@ header a{
             width: 70%;
             align-self: flex-end;
             position: relative;
-            bottom: -50px;
-            padding-bottom: 50px;
+            bottom: -145px;
+            padding-bottom: 75px;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         }
 
@@ -338,7 +338,7 @@ header a{
             color: $navy;
             background: transparent;
             width: 340px;
-            bottom: -40px;
+            bottom: -105px;
 
             i{
                 color: $green;
