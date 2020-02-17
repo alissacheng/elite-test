@@ -1,0 +1,72 @@
+footer{
+    border-top: 2px solid $green;
+
+    aside{
+        padding: 30px;
+    }
+}
+
+footer nav{
+    color: white;
+    background: $darkGrey;
+
+    ul{
+        margin: 0;
+        flex-wrap: wrap;
+        padding: 15px 0;
+    }
+
+    aside a{
+        text-transform: initial;
+    }
+
+    li{
+        padding: 15px 0;
+
+        &:last-of-type a{
+            border-right: 0;
+        }
+    }
+
+    p{
+        color: white;
+        text-align: center;
+        margin: 0;
+    }
+}
+
+footer nav aside p{
+    font-size: 2rem;
+}
+
+footer a{
+    padding: 0 15px;
+    font-size: 1.25rem;
+    border-right: 2px solid $green;
+
+    &:hover,
+    &:focus{
+        text-decoration: underline;
+    }
+}
+
+.footer__asideText{
+    padding: 25px 0;
+    p{
+        font-size: 1.25rem;
+    }
+    h4,
+    li{
+        font-size: 1.25rem;
+    }
+}
+
+@media(max-width:1000px){
+    footer nav li{
+        padding: 0;
+    }
+
+    aside{
+        display: block;
+    }
+}

@@ -1,0 +1,623 @@
+// First section
+
+.firstSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $lightGrey;
+
+    h2{
+        color: $green;
+        font-weight: 600;
+    }
+
+    &__card{
+        border-radius: 30px;
+        background: rgb(245,246,248);
+        width: 85%;
+        padding: 20px;
+        margin: 70px;
+
+        &--figures{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    table{
+        width: 50%;
+        background: white;
+
+        th{
+            font-size: 2rem;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        td{
+            padding: 25px 50px;
+        }
+
+        td:first-of-type{
+            border-right: 1px dotted grey;
+            position: relative;
+        }
+
+        div:last-of-type{
+            position: absolute;
+            right: -25px;
+            top: 40%;
+            border-radius: 50%;
+            background: $navy;
+            padding: 15px;
+            color: white;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+// Circle animations
+    
+.circle-bg {
+    fill: none;
+    stroke: rgb(200, 200, 200);
+    stroke-width: 0.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 1.5;
+    animation: progress 5s ease-out forwards infinite;
+    stroke-linecap: round;
+}
+
+@keyframes progress {
+    0% {
+    stroke-dasharray: 0 100;
+    }
+}
+
+.circularChart.green .circle {
+    stroke: $green;
+}
+
+.circularChart.blue .circle {
+    stroke: #3c9ee5;
+}
+
+.percentage {
+    fill: $navy;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.75rem;
+    text-anchor: middle;
+}
+
+//text blurb beside table
+
+.firstSection__card--figures>div{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+    svg{
+        transform: rotate(-45deg);
+        position: relative;
+        left: 15px;
+    }
+
+    p{
+        background: $green;
+        color: white;
+        padding: 25px;
+        border-radius: 10px;
+        position: relative;
+        font-size: 1.75rem;
+    }
+
+    span{
+        font-size: 2.5rem;
+    }
+}
+
+//Second Section
+
+.secondSection__title{
+    background: linear-gradient(to right, rgb(91, 102, 108) 40%, rgba(91, 102, 108, 0.55)), url(../assets/doctor-patient.jpg);
+    background-position: center top;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    h2{
+        width: 50%;
+        margin-left: 7.5%;
+        padding: 50px 0;
+    }
+}
+
+.secondSection__card{
+    margin: 75px auto;
+
+    th{     
+    text-transform: uppercase;
+    }
+
+    th, 
+    td{
+        border-right: 5px solid white;
+        padding: 15px;
+    }
+
+    td{
+        background:$lightGrey;
+    }
+
+    td:first-of-type{
+        background: $darkGrey;
+        color: white;
+    }
+}
+
+//Third Section
+
+.thirdSection__title{
+    background: linear-gradient(to right, rgb(91,102,108) 30%, rgba(91, 102, 108, 0.55)), url(../assets/doctor-clipboard.jpg);
+    background-position: left center;
+    background-size: cover;
+    padding: 50px 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    img{
+        position: absolute;
+        right: 7.5%;
+        bottom: 0;
+        height: 95%;
+        width: 3px;
+        border-radius: 15px;
+    }
+
+    li,
+    p{
+        color: white;
+        font-size: 1.75rem;
+    }
+
+    h2{
+        font-size: 3.5rem;
+        margin-top: 0;
+        margin: 15px 0;
+    }
+
+    &--main{
+        width: 50%;
+        margin-left: 7.5%;
+    }
+
+    &--aside{
+        margin-right: 7.5%;
+            li{
+            font-size: 1.5rem;
+            border-top: 1px dotted white;
+            list-style: none;
+            padding: 15px 0;
+            margin-right: 20px;
+            padding-right: 35px;
+
+            &:last-of-type{
+                border-bottom:1px dotted white;
+            }
+        }
+    }
+}
+
+.thirdSection__card{
+    margin: 75px auto;
+    table{
+        width: 100%;
+        font-family: "Raleway", sans-serif;
+    }
+
+    th{
+        padding: 15px;
+    }
+
+    tr td:first-of-type{
+        width: 33%;
+    }
+    td,th{
+        border-right: 2px solid white;
+    }
+
+    tr:nth-of-type(odd){
+        background: $lightGrey;
+    }
+
+    &--buttons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    button{
+        background: $navy;
+        color: white;
+        border: none;
+
+        img{
+            width: 15px;
+        }
+    }
+
+    button:first-of-type{
+        padding: 10px 20px;
+        border-radius: 35px;
+        font-size: 1.5rem;
+    }
+
+    button:nth-of-type(2){
+        border-radius: 50%;
+        padding: 5px 12px;
+    }
+}
+
+//fourth section
+.fourthSection__title{
+    background: linear-gradient(to right, rgb(91, 102, 108) 50%, rgba(91, 102, 108, 0.4)), url(../assets/smiling-patient.jpeg);
+    padding: 30px 0;
+    background-position: center right;
+    color: white;
+    display: flex;
+    align-items: center;
+
+    p{
+        color: white;
+        font-size: 1.75rem;
+    }
+
+    &--main{
+        margin-left: 7.5%;
+        width: 50%;
+    }
+}
+
+.fourthSection__card{
+    margin: 50px auto;
+
+    p{
+        margin: 10px 0;
+    }
+}
+
+
+.scrollTop{
+    position:-webkit-sticky;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    background: $navy;
+    color: white;
+    border: none;
+    display: block;
+
+    p{
+        margin: 0;
+        font-size: 1.5rem;
+        color: white;
+    }
+}
+
+.fourthSection__card--icons{
+    display: flex;
+    justify-content: space-evenly;
+
+    &>div{
+        width: 200px;
+        text-align: center;
+    }
+
+    span{
+        font-size: 2.75rem;
+        font-family: "Open Sans";
+    }
+
+    p{
+        text-align: center;
+    }
+
+    img{
+        height: 72px;
+    }
+}
+
+.greenBar{
+    width: 150px;
+    height: 4px;
+    background: $green;
+    border-radius: 15px;
+    margin: 20px auto;
+}
+
+//Contact section
+
+.contact__title{
+    height: 35vh;
+    background: $green;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+
+    span{
+        font-size: 1.25rem;
+        position: relative;
+        top: -15px;
+    }
+
+    button{
+        background: white;
+        font-size: 1.5rem;
+        padding: 15px 25px;
+        border-radius: 35px;
+        border: none;
+        margin-bottom: 25px;
+        font-weight: 600;
+        font-family: "Raleway", sans-serif;
+        color: rgba(0, 0, 0, 0.75);
+    }
+
+    h2{
+        font-weight: 600;
+    }
+
+    i{
+        padding: 0 10px;
+        font-size: 1.5rem;
+    }
+}
+
+.contact__main{
+    display: flex;
+    margin-top: 100px;
+
+    img{
+        margin-right: 20px;
+    }
+
+    ul{
+        list-style: none;
+        font-size: 2rem;
+    }
+
+    
+    li::before {
+        content: "\2022"; 
+        color: $green;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    table{
+        background: $lightGrey;
+        font-family: "Lato", sans-serif;
+        border-collapse: separate;
+        border-radius: 10px;
+
+        td:last-of-type{
+            border-radius: 0;
+        }
+
+        tr:first-of-type,
+        tr:first-of-type td{
+            border-radius: 10px 10px 0 0;
+        }
+
+        tr:last-of-type,
+        tr:last-of-type td{
+            border-radius: 0 0 10px 10px;
+        }
+
+        p{
+            margin: 0;
+        }
+    }
+
+    td{
+        border: 2px solid white;
+        padding: 15px 50px;
+        display: flex;
+    }
+
+    tr:last-of-type td{
+        flex-direction: column;
+    }
+
+    tr:last-of-type td,
+    tr:first-of-type td{
+        padding-top: 30px;
+    }
+
+    &__firstCard{
+        padding-right: 50px;
+    }
+
+    div{
+        width: 100%;
+    }
+
+    button{
+        background: $green;
+        color: white;
+        border: none;
+        border-radius: 35px;
+        padding: 15px 20px;
+        width: 225px;
+        margin: 15px 0;
+
+        img{
+            width: 20px;
+            height: 20px;
+            padding: 0 10px;
+            margin: 0;
+        }
+    }
+
+    &__secondCard > p{
+        font-size: 1.25rem;
+    }
+}
+
+//contact page icons
+
+.clockIcon{
+    align-self: center;
+}
+.clockIcon,
+.faxIcon{
+    height: 30px;
+    width: 30px;
+}
+.mobileIcon{
+    padding: 0 5px;
+    width: 20px;
+    height: 30px;
+}
+
+.envelopeIcon{
+    width: 30px;
+    height: 25px;
+}
+
+@media(max-width:1020px){
+
+    //contact section, give chart its on row
+    .contact__main{
+        flex-direction: column;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    //first section
+
+    .firstSection__card--figures{
+        flex-direction: column;
+
+        table{
+            width: 100%;
+        }
+
+        &>div{
+            width: 100%;
+
+            svg{
+                display: none;
+            }
+        }
+    }
+
+    //third section
+
+    .thirdSection__title{
+        background-position: right center;
+    }
+    .thirdSection__card tr td:first-of-type{
+        width: 20%;
+    }
+
+    .thirdSection__card table,
+    .secondSection__card table{
+        width: 1000px;
+    }
+}
+
+@media(max-width: 800px){
+    //second section
+    .secondSection__title h2{
+            width: 70%;
+            padding: 20px;
+    }
+
+    //third section
+    .thirdSection__title{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 20px;
+
+        &>div{
+            width: 80%;
+        }
+    }
+
+    //fourth section
+
+    .fourthSection__title div{
+        width: 70%;
+        padding: 20px;
+    }
+}
+
+@media(max-width:775px){
+    h4,li,p, table td, table a{
+        font-size: 1.75rem;
+    }
+//first section make margin smaller
+    .firstSection {
+        width: 100%;
+        margin: 0 auto;
+        padding-top: 75px;
+        
+
+        &__card{
+            width: 100%;
+            padding: 0;
+            margin: 5%;
+            padding: 2.5%;
+            background: $lightGrey;
+            flex-direction: column-reverse;
+
+            h2{
+                text-align: center;
+                font-size: 2.25rem;
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+
+    .thirdSection__title h2,
+    h2{
+        font-size: 2.75rem;
+    }
+
+    .contact__title h2{
+        text-align: center;
+    }
+
+    .firstSection table td{
+            padding: 20px;
+
+        }
+
+    .firstSection table div:last-of-type{
+        padding: 10px;
+        right: -20px;
+    }
+
+    .contact__main td{
+        padding: 15px 25px;
+        font-size: 1.75rem;
+    }
+}
