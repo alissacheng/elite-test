@@ -457,9 +457,6 @@ header a {
   header nav li {
     border-bottom: 1px solid white;
   }
-  header nav li:last-of-type {
-    border: #033363;
-  }
   header nav a {
     font-size: 1.25rem;
   }

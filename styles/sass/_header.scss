@@ -174,7 +174,7 @@ header a{
         }
 
         li{
-            border-bottom: 1px solid white;
+            border-bottom: 2px solid white;
 
             &:last-of-type{
                 border: $navy;
@@ -292,6 +292,10 @@ header a{
 
             &:first-of-type{
                 padding-right: 25px;
+            }
+
+            &::last-of-type{
+                border-bottom-color: white;
             }
         }
 
