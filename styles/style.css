@@ -535,6 +535,12 @@ header a {
 }
 
 @media (max-width: 775px) {
+  header nav li:last-of-type {
+    border: none;
+  }
+  header nav li:last-of-type:hover, header nav li:last-of-type:focus {
+    border-bottom: 2px solid white;
+  }
   header .mainMenu {
     position: static;
     background: #00bd97;
